@@ -14,3 +14,5 @@ used  models urls:
 
 In addition to [PIX](https://github.com/deepmind/dm_pix/tree/a75741220b8c3ead32ff3e9d7d38eb315d5f0ed9) (image processing library in [JAX](https://github.com/google/jax))
 
+## **Image Classification with FLAX-JAX**
+Image classification through a pretrained JAX resnet100 model by using [FLAX](https://github.com/google/flax) Neural Network library.
