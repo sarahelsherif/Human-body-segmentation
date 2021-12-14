@@ -12,13 +12,13 @@ Used  models urls:
 
 "resnet101": "https://download.pytorch.org/models/resnet101-63fe2227.pth"
 
-## **Model surgery PyTorch**
+## **Content:**
+### **Model surgery PyTorch**
 We have made a model surgery in PyTorch through taking 4 layers of a pretrained RESNET101 and combining their output with FCN classifier to implement [create_feature_extractor](https://pytorch.org/vision/master/generated/torchvision.models.feature_extraction.create_feature_extractor.html#torchvision.models.feature_extraction.create_feature_extractor) manually. And we achieved the same result successfully.
 
-## **Image Classification with FLAX-JAX**
+### **Image Classification with FLAX-JAX**
 Image classification through a pretrained JAX resnet100 model by using [FLAX](https://github.com/google/flax) Neural Network library.
 
-## **Image Segmentation with FLAX-JAX**
+### **Image Segmentation with FLAX-JAX**
 We have made a model surgery using [FLAX](https://github.com/google/flax) ,through taking 4 layers from a pretrained RESNET101 as a backbone and combined them with a FCN classifier to create our model.
-
 At the end, we applied segmentation mapping with our customized model to segment images.
