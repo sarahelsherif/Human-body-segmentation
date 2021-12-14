@@ -1,4 +1,4 @@
-# Segmentation Project
+# Image Segmentation Project
 ## Overview
 Image processing project for Human body segmentation, implemented in [PyTorch](https://github.com/pytorch/pytorch) and [JAX](https://github.com/google/jax).
 
