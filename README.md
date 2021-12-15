@@ -13,6 +13,9 @@ Used  models urls:
 "resnet101": "https://download.pytorch.org/models/resnet101-63fe2227.pth"
 
 ## **Content:**
+### segmentation with PyTorch ###
+we have a pretrained ResNet101 backbone and FCN classifier combined through [create_feature_extractor](https://pytorch.org/vision/master/generated/torchvision.models.feature_extraction.create_feature_extractor.html#torchvision.models.feature_extraction.create_feature_extractor) 
+which can slice the pretrained ResNet model at specific layers. Then apply the fully convolution network for semantic segmentation on input batches, and got our target segmented images.
 ### **Model surgery PyTorch**
 We have made a model surgery in PyTorch through taking 4 layers of a pretrained RESNET101 and combining their output with FCN classifier to implement [create_feature_extractor](https://pytorch.org/vision/master/generated/torchvision.models.feature_extraction.create_feature_extractor.html#torchvision.models.feature_extraction.create_feature_extractor) manually. And we achieved the same result successfully.
 
